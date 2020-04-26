@@ -1,17 +1,13 @@
-#user  nobody;
+# user  nobody;
 worker_processes  1;
-
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
-
+# error_log  logs/error.log;
+# error_log  logs/error.log  notice;
+# error_log  logs/error.log  info;
 #pid        logs/nginx.pid;
-
 
 events {
     worker_connections  1024;
 }
-
 
 http {
     include       mime.types;
@@ -76,8 +72,6 @@ http {
         #    deny  all;
         #}
     }
-
-
     # another virtual host using mix of IP-, name-, and port-based configuration
    
     #server {
@@ -90,8 +84,6 @@ http {
     #        index  index.html index.htm;
     #    }
     #}
-
-
     # HTTPS server
     #
     #server {
@@ -112,5 +104,4 @@ http {
     #        index  index.html index.htm;
     #    }
     #}
-
 }
