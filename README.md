@@ -1,2 +1,2 @@
-# nginx_conf
-nginx_conf
+# nginx 一本通配置文件
+
